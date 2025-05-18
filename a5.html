@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Reorder Tasks</title>
+  <script src="https://cdn.jsdelivr.net/npm/sortablejs@latest/Sortable.min.js"></script>
+</head>
+<body>
+  <h2>Reorder Tasks</h2>
+  <ul id="taskList">
+    <li>Task 1</li>
+    <li>Task 2</li>
+    <li>Task 3</li>
+  </ul>
+
+  <script>
+    new Sortable(document.getElementById('taskList'), {
+      animation: 150
+    });
+  </script>
+</body>
+</html>
